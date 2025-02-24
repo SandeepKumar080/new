@@ -1,0 +1,6 @@
+<h2>Are you sure to delete "{{product.name}}"?</h2>
+<form method="POST">
+{% csrf_token %}
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a herf="{% url 'clothing' %}" class="btn btn-secondary">Cancel</a>
+</form>
